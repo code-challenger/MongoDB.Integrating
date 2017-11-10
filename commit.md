@@ -1,1 +1,1 @@
-Update version information for documentation on 11/7/2017
+Update .doctrine-project.json versions for the website on 11/10/2017

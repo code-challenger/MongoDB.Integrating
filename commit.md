@@ -1,1 +1,1 @@
-Update .doctrine-project.json versions for the website on 11/12/2017
+Update homepage on 11/16/2017

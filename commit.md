@@ -1,1 +1,1 @@
-Log status in the catch block in JSThread::run() on 12/1/2017
+ Implement basic jsonSchema validation error generation on 12/8/2017

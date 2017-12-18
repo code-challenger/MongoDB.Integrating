@@ -1,1 +1,1 @@
-Add API params to mongo shell on 12/16/2017
+Rename response fields if hello command is sent on mongod on 12/18/2017

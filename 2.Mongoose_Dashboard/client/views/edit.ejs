@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Edit Dog</h3>
+    <% console.log(dog.name)%>
+    <form class="" action="/mongooses/<%= dog.id %>" method="post">
+      <p>
+        Name: <input type="text" name="name" value="<%= dog.name %>">
+      </p>
+      <p>
+        Description <input type="text" name="description" value="<%= dog.description %>">
+      </p>
+      <button>Save</button>
+    </form>
+  </body>
+</html>

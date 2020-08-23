@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/css/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h2>Welcome to the Message Board</h2>
+    <form class="" action="/create_message" method="post">
+      <p>
+        Name:
+        <input type="text" name="name" value="">
+      </p>
+      <p>
+        Message: <input type="text" name="message" value="">
+      </p>
+      <button>Submit</button>
+    </form>
+    <% for(var index in messages){ %>
+      <p>
+        Name:    <%= messages[index].name %>
+      </p>
+      <p>
+        Message:    <%= messages[index].message %>
+      </p>
+      <% var comment = messages[index]._comments %>
+      <% for(var comment_idx = 0; comment_idx < messages[index]._comments.length;comment_idx++){ %>
+        <p>
+          Name:    <%= comment[comment_idx].name %>
+        </p>
+        <p>
+          comments:    <%= comment[comment_idx].comment %>
+        </p>
+      <% }%>
+      <h6>leave a comment</h6>
+      <form class="" action="/create_comment/<%= messages[index]._id %>" method="post">
+        <p>
+          Name:
+          <input type="text" name="name" value="">
+        </p>
+        <p>
+          Comment: <input type="text" name="comment" value="">
+        </p>
+        <button>Leave Comment</button>
+      </form>
+
+    <% } %>
+  </body>
+</html>

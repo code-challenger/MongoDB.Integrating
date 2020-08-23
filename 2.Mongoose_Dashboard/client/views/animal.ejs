@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Animal</h3>
+
+      <p>
+        Name:<%= dog.name %>
+      </p>
+      <p>
+        Description:<%= dog.description %>
+      </p>
+
+
+      <a href="/mongooses/<%= dog.id %>/edit"><button>Edit</button></a>
+      <form class="" action="/mongooses/<%= dog.id %>/destroy" method="post">
+        <button>Delete</button>
+      </form>
+
+  </body>
+</html>
